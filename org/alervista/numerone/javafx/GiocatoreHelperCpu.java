@@ -84,7 +84,7 @@ public class GiocatoreHelperCpu implements GiocatoreHelper {
 		// TODO Auto-generated method stub
 		int i;
 		if (mano.size()>iCartaGiocata)
-			System.out.println("Carta giocata: "+mano.get(iCartaGiocata));
+			System.out.println(JBriscoFXMain.bundle.getString("CartaGiocata")+": "+mano.get(iCartaGiocata));
 		System.out.println();
 	}
 

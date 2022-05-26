@@ -14,12 +14,12 @@ public class GiocatoreHelperUtente implements GiocatoreHelper {
 			for (int indice=0; i<v.size(); i++)
 				System.out.print(v.get(i).GetValoreStr()+ " "+v.get(i).GetSemeStr()+" ");
 			System.out.println();
-			System.out.print("Inserire l'indice della carta da giocare: ");
+			System.out.print(JBriscoFXMain.bundle.getString("InserireIndice")+": ");
 			s=in.next();
 			i=Integer.parseInt(s);
 			i--;
 			if (i<0 || i>=v.size())
-				System.out.println("Numero non corretto.");
+				System.out.println(JBriscoFXMain.bundle.getString("NumeroNonCorretto"));
 		} while (i<0 || i>=v.size());
 		return i;
 	}
@@ -33,12 +33,12 @@ public class GiocatoreHelperUtente implements GiocatoreHelper {
 			for (int indice=0; i<v.size(); i++)
 				System.out.print(v.get(i).GetValoreStr()+ " "+v.get(i).GetSemeStr()+" ");
 			System.out.println();
-			System.out.print("Inserire l'indice della carta da giocare: ");
+			System.out.print(JBriscoFXMain.bundle.getString("InserireIndice"+": "));
 			s=in.next();
 			i=Integer.parseInt(s);
 			i--;
 			if (i<0 || i>=v.size())
-				System.out.println("Numero non corretto.");
+				System.out.println(JBriscoFXMain.bundle.getString("NumeroNonCorretto"));
 		} while (i<0 || i>=v.size());
 		return i;
 	}
@@ -52,13 +52,13 @@ public class GiocatoreHelperUtente implements GiocatoreHelper {
 	@Override
 	public void Paint(String nome, Vector<Carta> mano, int iCartaGiocata) {
 		// TODO Auto-generated method stub
-		System.out.println("Carte di "+ nome);
+		System.out.println(JBriscoFXMain.bundle.getString("CarteDi")+": "+ nome);
 		int i;
 		for (i=0; i<mano.size(); i++)
 			if (i!=iCartaGiocata)
 			System.out.print(mano.get(i)+" ");
 		if (mano.size()>iCartaGiocata)
-			System.out.println("Carta giocata: "+mano.get(iCartaGiocata));
+			System.out.println(JBriscoFXMain.bundle.getString("CartaGiocata")+": "+mano.get(iCartaGiocata));
 		System.out.println();
 	}
 

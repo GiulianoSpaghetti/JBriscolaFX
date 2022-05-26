@@ -26,8 +26,6 @@ public class Giocatore {
 	public void AddCarta(Mazzo m) {
 		Carta c=null;
 		boolean continua=true;
-		if (mano.size()==numeroCarte && !HasCartaGiocata())
-			throw new NullPointerException("Chiamato giocatore::addCarta con mano.size==numeroCarte e iCartaGiocata==-1");
 
 		if (HasCartaGiocata()) {
 			int i, j;
@@ -55,8 +53,6 @@ public class Giocatore {
 		
 	}
 	public Carta GetCartaGiocata() {
-		if (iCartaGiocata==nessunaCartaGiocata)
-			throw new IndexOutOfBoundsException("Chiamata a giocatore::getCartaGiocata con iCartaGiocata==nessunaCartaGiocata");
 		return mano.get(iCartaGiocata);
 	}
 	public int GetPunteggio() {return punteggio;}
@@ -69,8 +65,6 @@ public class Giocatore {
 	}
 	public boolean HasCartaGiocata() {return iCartaGiocata!=nessunaCartaGiocata;}
 	public void AggiornaPunteggio(Giocatore g) { 
-		if (g==null)
-			throw new NullPointerException("Chiamata a giocatoe.AggiornaPunteggio con g==NULL");
 		if (!HasCartaGiocata())
 			throw new IndexOutOfBoundsException("Chiamata a giocatore::AggiornaPunteggio con iCartaGiocata==nessunaCartaGiocata");
 		punteggio=punteggio+helper.GetPunteggio(GetCartaGiocata(), g.GetCartaGiocata());

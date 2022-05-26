@@ -6,8 +6,8 @@ import java.util.ResourceBundle;
 import org.altervista.numerone.javafx.CartaHelper.RISULTATI_COMPARAZIONE;
 
 public class JBriscoFXMain {
+	public static ResourceBundle bundle= ResourceBundle.getBundle("JBriscolaFX", Locale.getDefault());
 	public static void main(String[] args) {
-		ResourceBundle bundle = ResourceBundle.getBundle("JBriscolaFX", Locale.getDefault());
 		ElaboratoreCarteBriscola e = new ElaboratoreCarteBriscola(true);
 		Mazzo m = new Mazzo(e);
 		CartaHelperBriscola ch=new CartaHelperBriscola(e);
@@ -62,19 +62,17 @@ public class JBriscoFXMain {
 				System.out.println(bundle.getString("PartitaFinita")+".");
 				System.out.println(bundle.getString("PuntiDi")+ " "+ cpu.GetNome()+": "+cpu.GetPunteggioStr()); ;
 				System.out.println(bundle.getString("PuntiDi")+" "+g.GetNome()+": "+g.GetPunteggio());
-/*				if (g.getPunteggio() == cpu.getPunteggio())
-					Console.WriteLine($"{mgr.GetString("PartitaPatta")}.");
+				if (g.GetPunteggio() == cpu.GetPunteggio())
+					System.out.println(bundle.getString("PartitaPatta")+".");
 				else
-					if (g.getPunteggio() > cpu.getPunteggio())
-					Console.WriteLine($"{mgr.GetString("HaiVintoPer")} {g.getPunteggio() - cpu.getPunteggio()} {mgr.GetString("punti")}.");
+					if (g.GetPunteggio() > cpu.GetPunteggio())
+					System.out.println(bundle.getString("HaiVintoPer")+" "+(g.GetPunteggio() - cpu.GetPunteggio())+" "+bundle.getString("punti")+".");
 				else
-					Console.WriteLine($"{mgr.GetString("HaiPersoPer")} {cpu.getPunteggio() - g.getPunteggio()} {mgr.GetString("punti")}.");*/
+					System.out.println(bundle.getString("HaiPersoPer")+" "+(cpu.GetPunteggio() - g.GetPunteggio())+" "+bundle.getString("punti")+".");
 
 				return;
 			}
 		}
-/*		Console.Write($"{mgr.GetString("PremereInvio")}");
-		Console.ReadLine();*/
 	}
 
 }
