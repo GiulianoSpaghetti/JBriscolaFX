@@ -6,7 +6,7 @@ public class JBriscoFXMain {
 	public static void main(String[] args) {
 		ElaboratoreCarteBriscola e = new ElaboratoreCarteBriscola(true);
 		Mazzo m = new Mazzo(e);
-		CartaHelper ch=new CartaHelperBriscola(e);
+		CartaHelperBriscola ch=new CartaHelperBriscola(e);
 		Carta.Inizializza(40, ch);
 		Giocatore g = new Giocatore(new GiocatoreHelperUtente(), "Giulio",  true, 3);
 		Giocatore cpu = new Giocatore(new GiocatoreHelperCpu(e.GetCartaBriscola()), "Cpu", true, 3);
@@ -53,7 +53,7 @@ public class JBriscoFXMain {
 				primo.AddCarta(m);
 				secondo.AddCarta(m);
 			}
-			catch (ArrayIndexOutOfBoundsException e1)
+			catch (java.util.NoSuchElementException e1)
 			{
 				System.out.println("La partita è finita.");
 				System.out.println("Punti di Cpu: "+cpu.GetPunteggioStr()); ;

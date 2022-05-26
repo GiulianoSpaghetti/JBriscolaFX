@@ -9,17 +9,18 @@ public class GiocatoreHelperUtente implements GiocatoreHelper {
 	public int Gioca(Vector<Carta> v, int i) {
 		// TODO Auto-generated method stub
 		Scanner in=new Scanner(System.in);
+		String s;
 		do {
 			for (int indice=0; i<v.size(); i++)
-				System.out.print(v.get(indice)+ " ");
+				System.out.print(v.get(i).GetValoreStr()+ " "+v.get(i).GetSemeStr()+" ");
 			System.out.println();
 			System.out.print("Inserire l'indice della carta da giocare: ");
-			i=in.nextInt();
+			s=in.next();
+			i=Integer.parseInt(s);
 			i--;
 			if (i<0 || i>=v.size())
 				System.out.println("Numero non corretto.");
 		} while (i<0 || i>=v.size());
-		in.close();
 		return i;
 	}
 
@@ -27,17 +28,18 @@ public class GiocatoreHelperUtente implements GiocatoreHelper {
 	public int Gioca(Vector<Carta> v, Carta c, int i) {
 		// TODO Auto-generated method stub
 		Scanner in=new Scanner(System.in);
+		String s;
 		do {
 			for (int indice=0; i<v.size(); i++)
-				System.out.print(v.get(indice)+ " ");
+				System.out.print(v.get(i).GetValoreStr()+ " "+v.get(i).GetSemeStr()+" ");
 			System.out.println();
 			System.out.print("Inserire l'indice della carta da giocare: ");
-			i=in.nextInt();
+			s=in.next();
+			i=Integer.parseInt(s);
 			i--;
 			if (i<0 || i>=v.size())
 				System.out.println("Numero non corretto.");
 		} while (i<0 || i>=v.size());
-		in.close();
 		return i;
 	}
 

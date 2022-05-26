@@ -16,6 +16,7 @@ public class Carta {
 		Seme.set(helper.GetSeme(n));
 		Valore.set(helper.GetValore(n));
 		Punteggio.set(helper.GetPunteggio(n));
+		SemeStr.set(helper.GetSemeStr(Seme.get()));
 	}
 	
 	public static void Inizializza(int n, CartaHelper h) {

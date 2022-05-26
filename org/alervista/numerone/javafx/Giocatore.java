@@ -37,7 +37,7 @@ public class Giocatore {
 		}
 		try {
 			c=Carta.GetCarta(m.GetCarta());
-		} catch (NullPointerException e) {
+		} catch (java.util.NoSuchElementException e) {
 			numeroCarte--;
 			continua=false;
 			if (numeroCarte==0)

@@ -34,10 +34,10 @@ public class CartaHelperBriscola implements CartaHelper {
 		return valore;
 	}
 
-	public String GetSemeStr(int carta) {
+	public String GetSemeStr(int seme) {
 		// TODO Auto-generated method stub
 		String s="";
-		switch(carta/10) {
+		switch(seme) {
 			case 0: s="bastoni"; break;
 			case 1: s="coppe"; break;
 			case 2: s="denari"; break;
