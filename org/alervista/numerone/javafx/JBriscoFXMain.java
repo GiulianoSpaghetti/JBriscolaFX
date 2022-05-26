@@ -1,9 +1,13 @@
 package org.altervista.numerone.javafx;
 
+import java.util.Locale;
+import java.util.ResourceBundle;
+
 import org.altervista.numerone.javafx.CartaHelper.RISULTATI_COMPARAZIONE;
 
 public class JBriscoFXMain {
 	public static void main(String[] args) {
+		ResourceBundle bundle = ResourceBundle.getBundle("JBriscolaFX", Locale.getDefault());
 		ElaboratoreCarteBriscola e = new ElaboratoreCarteBriscola(true);
 		Mazzo m = new Mazzo(e);
 		CartaHelperBriscola ch=new CartaHelperBriscola(e);
@@ -27,14 +31,14 @@ public class JBriscoFXMain {
 		{
 			if (m.GetNumeroCarte() > 0)
 			{
-				System.out.println("La carta di briscola è: "+e.GetCartaBriscola());
-				System.out.println("Nel mazzo rimangono "+m.GetNumeroCarteStr()+" carte.");
+				System.out.println(bundle.getString("LaCartaDiBriscolaE")+": "+e.GetCartaBriscola());
+				System.out.println(bundle.getString("NelMazzoRimangono")+": "+m.GetNumeroCarteStr()+" "+bundle.getString("carte")+".");
 			}
-			System.out.println("Punti di Cpu: "+cpu.GetPunteggioStr()); ;
-			System.out.println("Punti di "+g.GetNome()+": "+g.GetPunteggio());
+			System.out.println(bundle.getString("PuntiDi")+ " "+ cpu.GetNome()+": "+cpu.GetPunteggioStr()); ;
+			System.out.println(bundle.getString("PuntiDi")+" "+g.GetNome()+": "+g.GetPunteggio());
 			primo.Gioca(0);
 			if (primo == cpu)
-				System.out.println("La carta giocata è: "+primo.GetCartaGiocata());
+				System.out.println(bundle.getString("LaCartaGiocataE")+": "+primo.GetCartaGiocata());
 			secondo.Gioca(primo, 0);
 
 			c = primo.GetCartaGiocata();
@@ -55,9 +59,9 @@ public class JBriscoFXMain {
 			}
 			catch (java.util.NoSuchElementException e1)
 			{
-				System.out.println("La partita è finita.");
-				System.out.println("Punti di Cpu: "+cpu.GetPunteggioStr()); ;
-				System.out.println("Punti di "+g.GetNome()+": "+g.GetPunteggio());
+				System.out.println(bundle.getString("PartitaFinita")+".");
+				System.out.println(bundle.getString("PuntiDi")+ " "+ cpu.GetNome()+": "+cpu.GetPunteggioStr()); ;
+				System.out.println(bundle.getString("PuntiDi")+" "+g.GetNome()+": "+g.GetPunteggio());
 /*				if (g.getPunteggio() == cpu.getPunteggio())
 					Console.WriteLine($"{mgr.GetString("PartitaPatta")}.");
 				else
