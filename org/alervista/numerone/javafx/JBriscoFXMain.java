@@ -21,7 +21,7 @@ public class JBriscoFXMain {
 		Carta c1;
 		Carta briscola = Carta.GetCarta(e.GetCartaBriscola());
 		String vers = "0.1";
-		//out.WriteLine($"CBriscola {vers} {mgr.GetString("AdOperaDi")} Giulio Sorrentino. {mgr.GetString("Traduzione")} {mgr.GetString("AdOperaDi")} {mgr.GetString("Autore")}.");
+		System.out.println("JBriscolaFX "+vers+" "+ bundle.getString("AdOperaDi")+" Giulio Sorrentino. "+bundle.getString("Traduzione")+" "+bundle.getString("AdOperaDi")+" "+bundle.getString("Autore")+".");
 		for (int i = 0; i < 3; i++)
 		{
 			g.AddCarta(m);
