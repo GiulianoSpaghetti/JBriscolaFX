@@ -33,7 +33,7 @@ public class GiocatoreHelperUtente implements GiocatoreHelper {
 			for (int indice=0; i<v.size(); i++)
 				System.out.print(v.get(i).GetValoreStr()+ " "+v.get(i).GetSemeStr()+" ");
 			System.out.println();
-			System.out.print(JBriscoFXMain.bundle.getString("InserireIndice"+": "));
+			System.out.print(JBriscoFXMain.bundle.getString("InserireIndice")+": ");
 			s=in.next();
 			i=Integer.parseInt(s);
 			i--;
