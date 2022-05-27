@@ -29,12 +29,15 @@ E' possibile specificare anche le -Duser.language e -Duser.region per indicare q
 
 Il jar è compatibile pure con la java virtual machine di oracle, solo che su windows per compilare i sorgenti è necessaria la openjdk.
 
-Il jar non è compatibile con la virtual machine Microsoft; per renderla compatibile basta ricompilare con java 11, però bisogna chiedere a gluon le librerie JavaFX per java 11, che sono nella fase di supporto esteso.
+Il jar non è compatibile con la virtual machine Microsoft, installata da Visual STudio 2022.
 
 <img width="359" alt="Immagine 2022-05-27 063145" src="https://user-images.githubusercontent.com/49764967/170629333-c6ac0ac5-218a-495c-a297-aa0fe1cb34db.png">
 
+<img width="376" alt="Immagine 2022-05-27 070505" src="https://user-images.githubusercontent.com/49764967/170633185-4acf4ea4-fdd3-4b70-a156-54752e4f826b.png">
+
 <img width="614" alt="Immagine 2022-05-27 055109" src="https://user-images.githubusercontent.com/49764967/170625897-72c49271-5652-4702-bebb-cbbcc6e68ea6.png">
 
+E' però posssibile usare eclipse per compilare i sorgenti java generici con la openjdk di microsoft, basta farla puntare all'indirizzo evidenziato nella prima schermata; solo che per ricompilare la JbriscolaFX occorrono anche le librerie Java FX per OpenJDK 11, che sono in supporto esteso e quindi bisogna farne esplicita richiesta.
 
 # Come localizzare il programma
 
