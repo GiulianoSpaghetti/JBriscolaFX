@@ -3,9 +3,7 @@ JBriscolaFX: porting in java di wxBriscola. Simulatore del gioco della briscola 
 
 Per la compilazione ha bisogno delle librerie javafx.
 
-[https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.2/
-
-http://www.java2s.com/Code/Jar/j/Downloadjfontchooser105jar.htm](https://gluonhq.com/products/javafx/)
+https://gluonhq.com/products/javafx/
 
 # Installazione su Windows
 E' necessaria la jre 17 o superiore per poter aprire il programma.
