@@ -31,7 +31,7 @@ Il jar è compatibile pure con la java virtual machine di oracle, solo che su wi
 
 Il jar non è compatibile con la virtual machine Microsoft.
 
-<img width="614" alt="Immagine 2022-05-27 034206" src="https://user-images.githubusercontent.com/49764967/170625839-3b014993-99d9-4cb5-962f-68ad26ff7390.png">
+<img width="614" alt="Immagine 2022-05-27 055109" src="https://user-images.githubusercontent.com/49764967/170625897-72c49271-5652-4702-bebb-cbbcc6e68ea6.png">
 
 
 # Come localizzare il programma
