@@ -12,7 +12,7 @@ Stando alle mie ricerche, oracle ha dismesso la jre pubblicando solo il JDK, che
 # Come avviare il JAR
 Per avviare il JAR, sia sotto windows che sotto linux, è necessaria la openjdk e le librerie JavaFX i cui link sono nei paragrafi precedenti.
 
-Purtroppo nel jar non vengono incluse le librerie fx, a ragione perché sono system dependent, per cui bisogna specificare a mano due parametri: il module èpath (cioé dove trovare le librerie) e add modules (cioé quali librerie caricare).
+Purtroppo nel jar non vengono incluse le librerie fx, a ragione perché sono system dependent, per cui bisogna specificare a mano due parametri: il module path (cioé dove trovare le librerie) e add modules (cioé quali librerie caricare).
 
 Vi semplifico il lavoro:
 
