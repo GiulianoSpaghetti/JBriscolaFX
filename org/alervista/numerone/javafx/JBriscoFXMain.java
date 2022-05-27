@@ -14,6 +14,7 @@ public class JBriscoFXMain {
 	   	  l=new Locale(args[0]);
 		else
 		  l=new Locale("it");
+	        bundle = ResourceBundle.getBundle("JBriscolaMessages", l);
 		ElaboratoreCarteBriscola e = new ElaboratoreCarteBriscola(true);
 		Mazzo m = new Mazzo(e);
 		ch=new CartaHelperBriscola(e);
