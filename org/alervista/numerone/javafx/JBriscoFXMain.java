@@ -33,7 +33,7 @@ public class JBriscoFXMain {
 		{
 			if (m.GetNumeroCarte() > 0)
 			{
-				System.out.println(bundle.getString("LaCartaDiBriscolaE")+": "+ch.getCartaBriscola().GetNumero()+" "+ch.getCartaBriscola().GetSemeStr());
+				System.out.println(bundle.getString("LaCartaDiBriscolaE")+": "+ch.getCartaBriscola());
 				System.out.println(bundle.getString("NelMazzoRimangono")+": "+m.GetNumeroCarteStr()+" "+bundle.getString("carte")+".");
 			}
 			System.out.println(bundle.getString("PuntiDi")+ " "+ cpu.GetNome()+": "+cpu.GetPunteggioStr()); ;
