@@ -16,9 +16,10 @@ Purtroppo nel jar non vengono incluse le librerie fx, a ragione perché sono sys
 
 Vi semplifico il lavoro:
 
-java -jar ./JBriscolaFX-0.1-openjdk.jar --module-path path a javafx-sdk-18.0.1/lib/ --add-modules=javafx.bean
+java -jar ./JBriscolaFX-0.1-openjdk.jar --module-path path a javafx-sdk-18.0.1/lib/ --add-modules=javafx.base
 
 ![screen-2022-05-27-03-29-47](https://user-images.githubusercontent.com/49764967/170610530-8898afc1-bf21-453b-b4a6-1c29244e3ab6.png)
+<img width="614" alt="Immagine 2022-05-27 034206" src="https://user-images.githubusercontent.com/49764967/170612122-466afa59-a2e1-4562-82cd-12160426e820.png">
 
 
 E' possibile specificare anche le -Duser.language e -Duser.region per indicare quale locale caricare. Attualmente sono supportati 4 locale: it, es, fr e en.
