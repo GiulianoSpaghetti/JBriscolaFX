@@ -37,7 +37,7 @@ Il jar non è compatibile con la virtual machine Microsoft, installata da Visual
 
 <img width="614" alt="Immagine 2022-05-27 055109" src="https://user-images.githubusercontent.com/49764967/170625897-72c49271-5652-4702-bebb-cbbcc6e68ea6.png">
 
-E' però posssibile usare eclipse per compilare i sorgenti java generici con la openjdk di microsoft, basta farla puntare all'indirizzo evidenziato nella prima schermata; solo che per ricompilare la JbriscolaFX occorrono anche le librerie Java FX per OpenJDK 11, che sono in supporto esteso e quindi bisogna farne esplicita richiesta.
+E' però possibile usare eclipse per compilare i sorgenti java generici con la openjdk di microsoft, basta farla puntare all'indirizzo evidenziato nella seconda schermata; solo che per ricompilare la JBriscolaFX occorrono anche le librerie Java FX per OpenJDK 11, che sono in supporto esteso e quindi bisogna farne esplicita richiesta.
 
 # Come localizzare il programma
 
