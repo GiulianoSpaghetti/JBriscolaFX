@@ -27,6 +27,8 @@ E' possibile specificare anche le -Duser.language e -Duser.region per indicare q
 
 ![screen-2022-05-27-03-29-47](https://user-images.githubusercontent.com/49764967/170612584-869e6953-e32a-4a7e-8a4f-4e65ade0f2c3.png)
 
+Il jar è compatibile pure con la java virtual machine di oracle, solo che su windows per compilare i sorgenti è neccesaria la openjdk.
+
 
 
 # Come localizzare il programma
