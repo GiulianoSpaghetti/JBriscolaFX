@@ -10,11 +10,12 @@ public class JBriscoFXMain {
 	public static CartaHelperBriscola ch;
 
 	public static void main(String[] args) {
+		Locale l;
 	    	if (args.length>0)
 	   	  l=new Locale(args[0]);
 		else
 		  l=new Locale("it");
-	        bundle = ResourceBundle.getBundle("JBriscolaMessages", l);
+	        bundle = ResourceBundle.getBundle("JBriscolaFX", l);
 		ElaboratoreCarteBriscola e = new ElaboratoreCarteBriscola(true);
 		Mazzo m = new Mazzo(e);
 		ch=new CartaHelperBriscola(e);
