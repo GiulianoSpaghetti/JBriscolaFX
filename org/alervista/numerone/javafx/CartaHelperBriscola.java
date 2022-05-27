@@ -38,10 +38,10 @@ public class CartaHelperBriscola implements CartaHelper {
 		// TODO Auto-generated method stub
 		String s="";
 		switch(seme) {
-			case 0: s="bastoni"; break;
-			case 1: s="coppe"; break;
-			case 2: s="denari"; break;
-			case 3: s="spade"; break;
+			case 0: s=JBriscoFXMain.bundle.getString("bastoni"); break;
+			case 1: s=JBriscoFXMain.bundle.getString("coppe"); break;
+			case 2: s=JBriscoFXMain.bundle.getString("denari"); break;
+			case 3: s=JBriscoFXMain.bundle.getString("spade"); break;
 		}
 		return s;
 	}
