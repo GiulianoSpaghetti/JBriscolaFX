@@ -7,10 +7,12 @@ import org.altervista.numerone.javafx.CartaHelper.RISULTATI_COMPARAZIONE;
 
 public class JBriscoFXMain {
 	public static ResourceBundle bundle= ResourceBundle.getBundle("JBriscolaFX", Locale.getDefault());
+	public static CartaHelperBriscola ch;
+
 	public static void main(String[] args) {
 		ElaboratoreCarteBriscola e = new ElaboratoreCarteBriscola(true);
 		Mazzo m = new Mazzo(e);
-		CartaHelperBriscola ch=new CartaHelperBriscola(e);
+		ch=new CartaHelperBriscola(e);
 		Carta.Inizializza(40, ch);
 		Giocatore g = new Giocatore(new GiocatoreHelperUtente(), "Giulio",  true, 3);
 		Giocatore cpu = new Giocatore(new GiocatoreHelperCpu(e.GetCartaBriscola()), "Cpu", true, 3);
@@ -31,7 +33,7 @@ public class JBriscoFXMain {
 		{
 			if (m.GetNumeroCarte() > 0)
 			{
-				System.out.println(bundle.getString("LaCartaDiBriscolaE")+": "+e.GetCartaBriscola());
+				System.out.println(bundle.getString("LaCartaDiBriscolaE")+": "+ch.getCartaBriscola().GetNumero()+" "+ch.getCartaBriscola().GetSemeStr());
 				System.out.println(bundle.getString("NelMazzoRimangono")+": "+m.GetNumeroCarteStr()+" "+bundle.getString("carte")+".");
 			}
 			System.out.println(bundle.getString("PuntiDi")+ " "+ cpu.GetNome()+": "+cpu.GetPunteggioStr()); ;

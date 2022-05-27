@@ -11,8 +11,12 @@ public class GiocatoreHelperUtente implements GiocatoreHelper {
 		Scanner in=new Scanner(System.in);
 		String s;
 		do {
-			for (int indice=0; i<v.size(); i++)
-				System.out.print(v.get(i).GetValoreStr()+ " "+v.get(i).GetSemeStr()+" ");
+			for (int indice=0; i<v.size(); i++) {
+				System.out.print(v.get(i).GetValoreStr()+ " "+v.get(i).GetSemeStr());
+				if (JBriscoFXMain.ch.getCartaBriscola().StessoSeme(v.get(i)))
+					System.out.print("*");
+				System.out.print(" ");
+			}
 			System.out.println();
 			System.out.print(JBriscoFXMain.bundle.getString("InserireIndice")+": ");
 			s=in.next();

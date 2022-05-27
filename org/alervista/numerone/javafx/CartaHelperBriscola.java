@@ -11,7 +11,9 @@ public class CartaHelperBriscola implements CartaHelper {
 		// TODO Auto-generated method stub
 		return carta/10;
 	}
-
+	
+	public Carta getCartaBriscola() {return Carta.GetCarta(cartaBriscola);}
+	
 	@Override
 	public int GetValore(int carta) {
 		// TODO Auto-generated method stub
