@@ -6,10 +6,14 @@ import java.util.ResourceBundle;
 import org.altervista.numerone.javafx.CartaHelper.RISULTATI_COMPARAZIONE;
 
 public class JBriscoFXMain {
-	public static ResourceBundle bundle= ResourceBundle.getBundle("JBriscolaFX", Locale.getDefault());
+	public static ResourceBundle bundle;
 	public static CartaHelperBriscola ch;
 
 	public static void main(String[] args) {
+	    	if (args.length>0)
+	   	  l=new Locale(args[0]);
+		else
+		  l=new Locale("it");
 		ElaboratoreCarteBriscola e = new ElaboratoreCarteBriscola(true);
 		Mazzo m = new Mazzo(e);
 		ch=new CartaHelperBriscola(e);
