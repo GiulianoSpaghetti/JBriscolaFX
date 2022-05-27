@@ -25,7 +25,8 @@ java -jar ./JBriscolaFX-0.1-openjdk.jar --module-path path a javafx-sdk-18.0.1/l
 
 E' possibile specificare anche le -Duser.language e -Duser.region per indicare quale locale caricare. Attualmente sono supportati 4 locale: it, es, fr e en.
 
-![screen-2022-05-27-03-29-47](https://user-images.githubusercontent.com/49764967/170610541-aa30be42-2cd5-45c8-a70c-b758fa5554e0.png)
+![screen-2022-05-27-03-29-47](https://user-images.githubusercontent.com/49764967/170612584-869e6953-e32a-4a7e-8a4f-4e65ade0f2c3.png)
+
 
 
 # Come localizzare il programma
