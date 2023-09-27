@@ -53,3 +53,7 @@ Oltre a fare la grafica in Java FX, è opportuno effettuare la derivazione delle
 Se volete farlo, siete liberi di poterlo sviluppare e di mandarmi i sorgenti come pull request, sarà mia premura mettervi tra gli sviluppatori del programma.
 Se, invece, volete produrre traduzioni di qualsiasi genere, siete comunque liberi di mandarmele, sempre facendo la pull request, in questo modo verrete inseriti tra i traduttori del programma
 
+# Donazioni
+
+http://numerone.altervista.org/donazioni.php
+
