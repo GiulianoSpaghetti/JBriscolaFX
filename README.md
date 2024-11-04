@@ -5,6 +5,9 @@ Per la compilazione ha bisogno delle librerie javafx.
 
 https://gluonhq.com/products/javafx/
 
+## ATTENZIONE
+Java puoi essere usato per polarizzare il sistema operativo e/o l'hardware 
+
 # Installazione su Windows
 E' necessaria la jre 17 o superiore per poter aprire il programma.
 Stando alle mie ricerche, oracle ha dismesso la jre pubblicando solo il JDK, che sarebbe il tool di sviluppo, che però su windows soffre di diverse lacune, è meglio usare la OpenJDK 18, scaricabile all'indirizzo https://jdk.java.net/18/ .
